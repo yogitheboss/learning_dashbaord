@@ -2,20 +2,27 @@ import apiCaller from "@/utils/apiCaller";
 import create from "zustand";
 export const useUserStore = create((set) => ({
   user: null,
-  token:null,
+  token: null,
   setUser: (user) =>
     set({
       user,
     }),
-  fetchUser:(email)=>{
-    apiCaller("GET",`/user/${email}`).then((res)=>{
-      console.log(res)
-      set({user:res})
-    }).catch((err)=>{
-      console.log(err)
-    })
+  fetchUser: (email) => {
+    apiCaller("GET", `/user/${email}`)
+      .then((res) => {
+        set({ user: res });
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   },
-  setToken:(token)=>{
-    set({token:token})
-  }
+  setRole: async (role) => {
+    let res = await apiCaller("put", `/user/role`, { role: role });
+    if (res.status === "success") {
+      set({ user: res.user });
+    }
+  },
+  setToken: (token) => {
+    set({ token: token });
+  },
 }));

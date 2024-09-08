@@ -19,7 +19,6 @@ const apiCaller = async (
   headers = {}
 ) => {
   const token = useUserStore.getState().token;
-  console.log(token);
   try {
     const response = await api({
       method,
@@ -32,7 +31,6 @@ const apiCaller = async (
         ...headers,
       }, // Merge default headers with custom headers
     });
-    console.log(response.data);
     return response.data; // Return response data
   } catch (error) {
     // Error handling

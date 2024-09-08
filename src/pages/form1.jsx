@@ -1,15 +1,19 @@
 import React, { useState } from "react";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Label } from "@/components/ui/label";
+import { useNavigate } from "react-router-dom";
+import { useUserStore } from "@/store/user";
 
-const UserRoleForm = () => {
+const UserRoleForm = ({ setProgress, userId }) => {
   const [role, setRole] = useState(null);
-
-  const handleSubmit = (event) => {
+  const navigate = useNavigate();
+  const handleSubmit = async (event) => {
     event.preventDefault();
     if (role) {
-      console.log("Selected role:", role);
-      // Handle form submission logic here
+      await useUserStore.getState().setRole(role);
+      setProgress(100);
+      if (role === "Instructor") navigate(`/instructor/${userId}`);
+      else if (role === "Student") navigate(`/student/${userId}`);
     } else {
       alert("Please select your role.");
     }

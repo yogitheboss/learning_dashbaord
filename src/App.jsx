@@ -11,7 +11,6 @@ function App() {
     user,
     isAuthenticated,
   } = useAuth0();
-  console.log(isAuthenticated);
   const navigate=useNavigate();
   useEffect(() => {
     if(isAuthenticated){
@@ -32,14 +31,12 @@ function App() {
           grantType: "client_credentials",
           }
       );
-      console.log(token);
       let res = await axios.get("http://localhost:3000/api", {
         headers: {
           Authorization: "Bearer " + token,
           "Content-Type": "application/json",
         },
       });
-      console.log(res);
     } catch (err) {
       console.log(err);
     }

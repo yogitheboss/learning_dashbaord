@@ -6,6 +6,9 @@ import { Auth0Provider } from "@auth0/auth0-react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Auth } from "./pages/auth.jsx";
 import Dashboard from "./pages/dashboard.jsx";
+import { ThemeProvider } from "./components/theme.jsx";
+import Student from "./pages/student.jsx";
+import Instructor from "./pages/instructor.jsx";
 
 const router = createBrowserRouter([
   {
@@ -19,7 +22,15 @@ const router = createBrowserRouter([
   {
     path: "/dashboard",
     element: <Dashboard />,
-  }
+  },
+  {
+    path: "/student/:id",
+    element: <Student />,
+  },
+  {
+    path: "/instructor/:id",
+    element: <Instructor />,
+  },
 ]);
 const clientId = import.meta.env.VITE_CLIENT_ID;
 const domain = import.meta.env.VITE_DOMAIN;
@@ -33,8 +44,12 @@ createRoot(document.getElementById("root")).render(
         audience: "unique_identifier",
         scope: "openid profile email",
       }}
+      useRefreshTokens={true}
+      cacheLocation="localstorage"
     >
-      <RouterProvider router={router} />
+      <ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">
+        <RouterProvider router={router} />
+      </ThemeProvider>
     </Auth0Provider>
   </StrictMode>
 );
