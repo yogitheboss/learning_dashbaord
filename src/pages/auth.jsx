@@ -16,7 +16,7 @@ export const Auth = () => {
 
 
   return (
-    <div className="light h-screen w-full lg:flex">
+    <div className="light h-screen w-full lg:flex bg-gradient-to-r from-blue-50 to-sky-100">
       <div className="hidden w-2/3 flex-col justify-between bg-[url('/src/assets/pattern.svg')] bg-cover bg-right-top p-8 lg:flex">
         <h1 className="flex gap-2 text-5xl font-extrabold text-white">
           <img
@@ -40,7 +40,7 @@ export const Auth = () => {
           </span>
         </div>
       </div>
-      <div className="grid flex-1 place-items-center bg-white p-6">
+      <div className="grid flex-1 place-items-center  p-6">
         <Button
           type="submit"
           size="lg"

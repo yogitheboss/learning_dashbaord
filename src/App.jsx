@@ -1,6 +1,8 @@
 import "./App.css";
 import { useAuth0 } from "@auth0/auth0-react";
 import axios from "axios";
+import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 function App() {
   const {
     getAccessTokenSilently,
@@ -9,7 +11,13 @@ function App() {
     user,
     isAuthenticated,
   } = useAuth0();
-
+  console.log(isAuthenticated);
+  const navigate=useNavigate();
+  useEffect(() => {
+    if(isAuthenticated){
+      navigate("/dashboard")
+    }
+  }, [isAuthenticated]);
   function callApi() {
     axios
       .get("http://localhost:3000")
