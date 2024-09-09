@@ -11,7 +11,6 @@ function Sidebar({ nodeData, onClose }) {
     <div className="sidebar">
       <button className="close-button" onClick={onClose}><IoCloseOutline /></button>
       <h2 className=' text-black'>{nodeData.label}</h2>
-      {/* Add more detailed info or actions based on the nodeData */}
     </div>
   );
 }

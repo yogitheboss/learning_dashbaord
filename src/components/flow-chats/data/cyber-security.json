@@ -1,0 +1,322 @@
+[
+    {
+      "topic": "Basics",
+      "subtopics": [
+        {
+          "name": "Introduction to Web Security",
+          "resources": [
+            {
+              "title": "Web Security Considerations - GeeksforGeeks",
+              "link": ""
+            }
+          ]
+        },
+        {
+          "name": "Common Threats",
+          "resources": [
+            {
+              "title": "10 Common Website Vulnerabilities: Security Tips",
+              "link": "Toptal�"
+            }
+          ]
+        },
+        {
+          "name": "Security Principles",
+          "resources": [
+            {
+              "title": "https://www.geeksforgeeks.org/threats-to-information-security/",
+              "link": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Authentication",
+      "subtopics": [
+        {
+          "name": "Password Management",
+          "resources": [
+            {
+              "title": "Zoho Vault: Password Manager with Single Sign-On & MFA for Businesses, Teams & Families",
+              "link": ""
+            }
+          ]
+        },
+        {
+          "name": "Multi-Factor Authentication",
+          "resources": [
+            {
+              "title": "What is multi-factor authentication (MFA)?",
+              "link": "Cloudflare"
+            }
+          ]
+        },
+        {
+          "name": "OAuth and OpenID Connect",
+          "resources": [
+            {
+              "title": "OAuth 2.0 vs OpenID Connect: Understanding the Differences and Use Cases",
+              "link": "by Beno Developer"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Authorization",
+      "subtopics": [
+        {
+          "name": "Role-Based Access Control",
+          "resources": [
+            {
+              "title": "What Is RBAC (Role Based Access Control)? (sentinelone.com)",
+              "link": ""
+            }
+          ]
+        },
+        {
+          "name": "Access Control Lists",
+          "resources": [
+            {
+              "title": "What is an access control list (ACL)?",
+              "link": "NordLayer"
+            }
+          ]
+        },
+        {
+          "name": "JWT (JSON Web Tokens)",
+          "resources": [
+            {
+              "title": "JWT attacks",
+              "link": "Web Security Academy (portswigger.net)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Data Security",
+      "subtopics": [
+        {
+          "name": "Data Encryption",
+          "resources": [
+            {
+              "title": "Why is encryption important for privacy?",
+              "link": "Encryption and privacy"
+            }
+          ]
+        },
+        {
+          "name": "Secure Storage",
+          "resources": [
+            {
+              "title": "Secure Browser Storage: The Facts (auth0.com)",
+              "link": ""
+            }
+          ]
+        },
+        {
+          "name": "Data Masking",
+          "resources": [
+            {
+              "title": "What is Data Masking? Types, Techniques and Best Practices (lepide.com)",
+              "link": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Network Security",
+      "subtopics": [
+        {
+          "name": "Firewalls",
+          "resources": [
+            {
+              "title": "What is a firewall?",
+              "link": "Network firewalls"
+            }
+          ]
+        },
+        {
+          "name": "Intrusion Detection Systems",
+          "resources": [
+            {
+              "title": "What is an Intrusion Detection System (IDS)? + Best IDS Tools",
+              "link": "UpGuard"
+            }
+          ]
+        },
+        {
+          "name": "VPNs and Secure Tunnels",
+          "resources": [
+            {
+              "title": "What is tunneling?",
+              "link": "Tunneling in networking"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Application Security",
+      "subtopics": [
+        {
+          "name": "Secure Coding Practices",
+          "resources": [
+            {
+              "title": "OWASP Secure Coding Practices - Quick Reference Guide",
+              "link": "Secure Coding Practices"
+            }
+          ]
+        },
+        {
+          "name": "Code Reviews",
+          "resources": [
+            {
+              "title": "10-point secure code review checklist for developers (hackthebox.com)",
+              "link": ""
+            }
+          ]
+        },
+        {
+          "name": "Static and Dynamic Analysis",
+          "resources": [
+            {
+              "title": "Dynamic Program Analysis and Static Code Analysis in Web Security",
+              "link": "Acunetix"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Vulnerability Management",
+      "subtopics": [
+        {
+          "name": "Vulnerability Scanning",
+          "resources": [
+            {
+              "title": "Vulnerability Scanning Tools",
+              "link": "OWASP Foundation"
+            }
+          ]
+        },
+        {
+          "name": "Penetration Testing",
+          "resources": [
+            {
+              "title": "Penetration Testing Engineer",
+              "link": "Free Online Course"
+            }
+          ]
+        },
+        {
+          "name": "Patch Management",
+          "resources": [
+            {
+              "title": "Understanding Vulnerability Management and Patch Management",
+              "link": "Tripwire"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Incident Response",
+      "subtopics": [
+        {
+          "name": "Incident Detection",
+          "resources": [
+            {
+              "title": "Incident Response [Beginner's Guide] - CrowdStrike",
+              "link": ""
+            }
+          ]
+        },
+        {
+          "name": "Incident Handling",
+          "resources": [
+            {
+              "title": "Incident Response Steps in Web Application Security",
+              "link": "Invicti"
+            }
+          ]
+        },
+        {
+          "name": "Post-Incident Analysis",
+          "resources": [
+            {
+              "title": "Post-Incident Analysis: Lessons for Cybersecurity Excellence (threatintelligence.com)",
+              "link": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Compliance",
+      "subtopics": [
+        {
+          "name": "GDPR",
+          "resources": [
+            {
+              "title": "What is the General Data Protection Regulation (GDPR)?",
+              "link": "Cloudflare"
+            }
+          ]
+        },
+        {
+          "name": "HIPAA",
+          "resources": [
+            {
+              "title": "Build a HIPAA Compliant Website: HIPAA Compliance Checklist",
+              "link": "WeWeb"
+            }
+          ]
+        },
+        {
+          "name": "PCI-DSS",
+          "resources": [
+            {
+              "title": "What is PCI DSS compliance?",
+              "link": "PCI DSS definition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Advanced Topics",
+      "subtopics": [
+        {
+          "name": "Zero Trust Architecture",
+          "resources": [
+            {
+              "title": "What is Zero Trust Architecture?",
+              "link": "SANS Institute"
+            }
+          ]
+        },
+        {
+          "name": "Threat Modeling",
+          "resources": [
+            {
+              "title": "What is threat modeling?",
+              "link": "Cloudflare"
+            }
+          ]
+        },
+        {
+          "name": "Security Automation",
+          "resources": [
+            {
+              "title": "https://www.bing.com/ck/a?!&&p=e0001e0f59016e62JmltdHM9MTcyNTc1MzYwMCZpZ3VpZD0xMWE0YzdiOC0xMmI1LTYyMWQtMTZhOC1kNDUwMTM0ZDYzOWYmaW5zaWQ9NTUwNw&ptn=3&ver=2&hsh=3&fclid=11a4c7b8-12b5-621d-16a8-d450134d639f&psq=web+security+%2c+security+Automation&u=a1aHR0cHM6Ly93d3cuZmlyZXdhbGwuY3gvc2VjdXJpdHkvd2ViLWFwcGxpY2F0aW9uLXZ1bG5lcmFiaWxpdHktc2Nhbm5lcnMvYXV0b21hdGUtd2ViLXNlY3VyaXR5LWhvdy13aHktc2VjdXJpdHktdG9vbHMuaHRtbD9oaWdobGlnaHQ9V3pSZCM6fjp0ZXh0PUF1dG9tYXRpbmclMjB3ZWIlMjBzZWN1cml0eSUyMG1lYW5zJTIwaGF2aW5nJTIwYSUyMHBsYW4lMjB0aGF0LGF0JTIwc3BlY2lmaWMlMjBwcmVkZXRlcm1pbmVkJTIwaW50ZXJ2YWxzJTIwdGhyb3VnaG91dCUyMHRoZSUyMGRldmVsb3BtZW50JTIwbGlmZWN5Y2xlLg&ntb=1",
+              "link": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]

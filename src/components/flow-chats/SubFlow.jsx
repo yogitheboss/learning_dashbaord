@@ -10,11 +10,12 @@ import {
 import "@xyflow/react/dist/style.css";
 
 import generateNodesAndEdges from "./generateNodesAndEdges";
-import roadmapData from "./roadmapData";
+// import roadmapData from "./roadmapData"; // Import roadmap data by js
+import roadmapData from "./data/web-dev.json";
 import Sidebar from "./Sidebar";
 
 const rfStyle = {
-  backgroundColor: "#D0C0F7",
+  backgroundColor: "#231F2E",
 };
 
 function SubFlow() {

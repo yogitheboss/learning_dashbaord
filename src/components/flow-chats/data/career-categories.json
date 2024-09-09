@@ -1,0 +1,63 @@
+{
+    "1. Technology and Computer Science": {
+      "Software Developer": "Design, develop, and maintain software applications.",
+      "Web Developer": "Build and maintain websites and web applications.",
+      "Cybersecurity Specialist": "Protect systems and networks from digital attacks.",
+      "Data Analyst": "Analyze data to help organizations make informed decisions.",
+      "Game Designer/Developer": "Create and develop video games.",
+      "IT Support Specialist": "Provide technical support and troubleshoot IT issues."
+    },
+    "2. Science and Engineering": {
+      "Biomedical Engineer": "Design and develop medical devices and equipment.",
+      "Environmental Scientist": "Study and protect the environment.",
+      "Civil Engineer": "Plan and oversee construction of infrastructure projects.",
+      "Mechanical Engineer": "Design and build mechanical systems and devices.",
+      "Astronomer": "Study celestial objects and phenomena."
+    },
+    "3. Business and Management": {
+      "Entrepreneur": "Start and manage your own business.",
+      "Marketing Specialist": "Develop strategies to promote products and services.",
+      "Financial Analyst": "Analyze financial data and provide investment advice.",
+      "Human Resources Specialist": "Manage recruitment, employee relations, and benefits.",
+      "Sales Manager": "Oversee sales teams and strategies."
+    },
+    "4. Creative Arts and Design": {
+      "Graphic Designer": "Create visual content for print and digital media.",
+      "Photographer/Videographer": "Capture and edit photos and videos.",
+      "Fashion Designer": "Design clothing and accessories.",
+      "Animator": "Create animations for movies, games, or online content.",
+      "Interior Designer": "Design and arrange indoor spaces."
+    },
+    "5. Healthcare and Medicine": {
+      "Nurse": "Provide patient care and support in various healthcare settings.",
+      "Doctor": "Diagnose and treat medical conditions.",
+      "Pharmacist": "Dispense medications and provide pharmaceutical advice.",
+      "Physical Therapist": "Help patients recover and improve movement.",
+      "Medical Researcher": "Conduct research to advance medical knowledge and treatments."
+    },
+    "6. Education and Social Services": {
+      "Teacher": "Educate and support students in academic settings.",
+      "Counselor": "Provide guidance and support for personal, academic, and career issues.",
+      "Social Worker": "Assist individuals and families in overcoming social and economic challenges.",
+      "Early Childhood Educator": "Work with young children to promote their development."
+    },
+    "7. Trades and Technical Careers": {
+      "Electrician": "Install and maintain electrical systems.",
+      "Plumber": "Install and repair plumbing systems.",
+      "Carpenter": "Build and repair wooden structures.",
+      "Automotive Technician": "Repair and maintain vehicles.",
+      "HVAC Technician": "Install and service heating, ventilation, and air conditioning systems."
+    },
+    "8. Public Safety and Law": {
+      "Police Officer": "Protect and serve communities, enforce laws.",
+      "Firefighter": "Respond to fires, rescue operations, and emergencies.",
+      "Paralegal": "Assist lawyers with legal research and case preparation.",
+      "Forensic Scientist": "Analyze evidence from crime scenes."
+    },
+    "Exploring Interests": {
+      "Internships": "Gain practical experience in fields of interest.",
+      "Volunteering": "Explore different careers and give back to the community.",
+      "Extracurricular Activities": "Participate in clubs or activities related to career interests."
+    }
+  }
+  
