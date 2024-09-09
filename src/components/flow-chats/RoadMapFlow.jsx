@@ -1,44 +1,34 @@
-import React, { useCallback, useEffect } from 'react';
-import ReactFlow, {
-  useNodesState,
-  useEdgesState,
-  addEdge,
-} from 'reactflow';
-import 'reactflow/dist/style.css';
-import SubFlow from './SubFlow';
+import React, { useCallback, useEffect } from "react";
+import ReactFlow, { useNodesState, useEdgesState, addEdge } from "reactflow";
+import "reactflow/dist/style.css";
+import SubFlow from "./SubFlow";
 
 const roadmapData = {
   "1. Basics of Web Development": {
     "Internet Basics": [
       "How the internet works",
       "What is HTTP/HTTPS",
-      "DNS and Domain Names"
+      "DNS and Domain Names",
     ],
     "Web Hosting & Domain Names": [
       "Understanding servers",
       "Hosting services",
-      "How to deploy a website"
+      "How to deploy a website",
     ],
     "Version Control (Git & GitHub)": [
       "Learning Git",
       "Pushing code to GitHub",
-      "Collaborating with others"
-    ]
+      "Collaborating with others",
+    ],
   },
   "2. Frontend Development": {
     "A. HTML & CSS": {
-      "HTML": [
-        "Basic structure",
-        "Tags",
-        "Forms",
-        "Tables",
-        "Media tags"
-      ],
-      "CSS": [
+      HTML: ["Basic structure", "Tags", "Forms", "Tables", "Media tags"],
+      CSS: [
         "Styling",
         "Layouts (Box Model, Flexbox, Grid)",
-        "Responsiveness (Media Queries)"
-      ]
+        "Responsiveness (Media Queries)",
+      ],
     },
     "B. JavaScript (JS)": {
       "JavaScript Fundamentals": [
@@ -47,17 +37,17 @@ const roadmapData = {
         "Conditionals",
         "Functions",
         "Events",
-        "DOM manipulation"
+        "DOM manipulation",
       ],
       "Modern JavaScript (ES6+)": [
         "Arrow functions",
         "Promises",
         "Async/await",
         "Destructuring",
-        "Template literals"
-      ]
-    }
-  }
+        "Template literals",
+      ],
+    },
+  },
 };
 
 const generateNodesAndEdges = (data) => {
@@ -70,12 +60,12 @@ const generateNodesAndEdges = (data) => {
     if (!levelY[level]) {
       levelY[level] = 0;
     }
-    
+
     Object.keys(obj).forEach((key, index) => {
       const currentId = String(idCounter++);
       const xPos = index * 250 + xOffset;
       const yPos = level * 150;
-      
+
       nodes.push({
         id: currentId,
         position: { x: xPos, y: yPos },
@@ -83,10 +73,14 @@ const generateNodesAndEdges = (data) => {
       });
 
       if (parentId) {
-        edges.push({ id: `e${parentId}-${currentId}`, source: parentId, target: currentId });
+        edges.push({
+          id: `e${parentId}-${currentId}`,
+          source: parentId,
+          target: currentId,
+        });
       }
 
-      if (typeof obj[key] === 'object') {
+      if (typeof obj[key] === "object") {
         traverseData(obj[key], currentId, level + 1, xOffset + 100);
       } else if (Array.isArray(obj[key])) {
         obj[key].forEach((item, itemIndex) => {
@@ -99,7 +93,11 @@ const generateNodesAndEdges = (data) => {
             position: { x: childXPos, y: childYPos },
             data: { label: item },
           });
-          edges.push({ id: `e${currentId}-${itemId}`, source: currentId, target: itemId });
+          edges.push({
+            id: `e${currentId}-${itemId}`,
+            source: currentId,
+            target: itemId,
+          });
         });
       }
     });
@@ -114,7 +112,8 @@ export default function RoadMapFlow() {
   const [edges, setEdges, onEdgesChange] = useEdgesState([]);
 
   useEffect(() => {
-    const { nodes: initialNodes, edges: initialEdges } = generateNodesAndEdges(roadmapData);
+    const { nodes: initialNodes, edges: initialEdges } =
+      generateNodesAndEdges(roadmapData);
     setNodes(initialNodes);
     setEdges(initialEdges);
   }, [setNodes, setEdges]);
@@ -125,16 +124,8 @@ export default function RoadMapFlow() {
   );
 
   return (
-    <div style={{ width: '100vw', height: '100vh' }}>
-            <SubFlow />
-      <ReactFlow
-        nodes={nodes}
-        edges={edges}
-        onNodesChange={onNodesChange}
-        onEdgesChange={onEdgesChange}
-        onConnect={onConnect}
-        fitView
-      />
+    <div style={{ width: "100vw", height: "100vh" }}>
+      <SubFlow />
     </div>
   );
 }

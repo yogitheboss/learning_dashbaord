@@ -5,11 +5,13 @@ import {
   applyEdgeChanges,
   applyNodeChanges,
   Background,
+  ReactFlowProvider,
 } from "@xyflow/react";
 import "@xyflow/react/dist/style.css";
 
-import generateNodesAndEdges from "./generateNodesAndEdges";  // Import the helper function
-import roadmapData from "./roadmapData";  // Your JSON roadmap
+import generateNodesAndEdges from "./generateNodesAndEdges";
+import roadmapData from "./roadmapData";
+import Sidebar from "./Sidebar";
 
 const rfStyle = {
   backgroundColor: "#D0C0F7",
@@ -18,6 +20,7 @@ const rfStyle = {
 function SubFlow() {
   const [nodes, setNodes] = useState([]);
   const [edges, setEdges] = useState([]);
+  const [selectedNode, setSelectedNode] = useState(null);
 
   useEffect(() => {
     const { nodes: initialNodes, edges: initialEdges } = generateNodesAndEdges(roadmapData);
@@ -38,20 +41,33 @@ function SubFlow() {
     [setEdges]
   );
 
+  const onNodeClick = useCallback((event, node) => {
+    setSelectedNode(node);
+  }, []);
+
+  const closeSidebar = useCallback(() => {
+    setSelectedNode(null);
+  }, []);
+
   return (
-    <div className="w-screen h-screen">
-      <ReactFlow
-        nodes={nodes}
-        edges={edges}
-        onNodesChange={onNodesChange}
-        onEdgesChange={onEdgesChange}
-        onConnect={onConnect}
-        fitView
-        style={rfStyle}
-        attributionPosition="top-right">
-        <Background />
-      </ReactFlow>
-    </div>
+    <ReactFlowProvider>
+      <div className="w-screen h-screen">
+        <ReactFlow
+          nodes={nodes}
+          edges={edges}
+          onNodesChange={onNodesChange}
+          onEdgesChange={onEdgesChange}
+          onConnect={onConnect}
+          onNodeClick={onNodeClick} // Add onNodeClick handler
+          fitView
+          style={rfStyle}
+          attributionPosition="top-right">
+          <Background />
+        </ReactFlow>
+        {/* Render Sidebar */}
+        <Sidebar nodeData={selectedNode?.data} onClose={closeSidebar} />
+      </div>
+    </ReactFlowProvider>
   );
 }
 
