@@ -1,8 +1,8 @@
 import "./App.css";
 import { useAuth0 } from "@auth0/auth0-react";
 import axios from "axios";
-import { useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import React, { useEffect } from "react";
+import { Link, useNavigate } from "react-router-dom";
 function App() {
   const {
     getAccessTokenSilently,
@@ -11,10 +11,10 @@ function App() {
     user,
     isAuthenticated,
   } = useAuth0();
-  const navigate=useNavigate();
+  const navigate = useNavigate();
   useEffect(() => {
-    if(isAuthenticated){
-      navigate("/dashboard")
+    if (isAuthenticated) {
+      navigate("/dashboard");
     }
   }, [isAuthenticated]);
   function callApi() {
@@ -25,12 +25,10 @@ function App() {
   }
   async function callProtectedApi() {
     try {
-      const token = await getAccessTokenSilently(
-        {
-          audience: "unique_identifier",
-          grantType: "client_credentials",
-          }
-      );
+      const token = await getAccessTokenSilently({
+        audience: "unique_identifier",
+        grantType: "client_credentials",
+      });
       let res = await axios.get("http://localhost:3000/api", {
         headers: {
           Authorization: "Bearer " + token,
@@ -48,13 +46,13 @@ function App() {
           isAuthenticated
             ? logout({ returnTo: window.location.origin })
             : loginWithRedirect()
-        }
-      >
+        }>
         {isAuthenticated ? "Log Out" : "Log In"}
       </button>
       {isAuthenticated && <code>{JSON.stringify(user, null, 2)}</code>}
       <button onClick={callApi}>Call API</button>
       <button onClick={callProtectedApi}>Call Protected API</button>
+      <Link to="/dash"> Dashboard</Link>
     </header>
   );
 }

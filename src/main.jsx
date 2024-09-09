@@ -9,6 +9,8 @@ import Dashboard from "./pages/dashboard.jsx";
 import { ThemeProvider } from "./components/theme.jsx";
 import Student from "./pages/student.jsx";
 import Instructor from "./pages/instructor.jsx";
+import Dash from "./pages/Dash.jsx";
+import RoadMapFlow from "./components/flow-chats/RoadMapFlow.jsx";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +20,14 @@ const router = createBrowserRouter([
   {
     path: "/auth",
     element: <Auth />,
+  },
+  {
+    path: "/dash",
+    element: <Dash />,
+  },
+  {
+    path: "/webdev",
+    element: <RoadMapFlow />,
   },
   {
     path: "/dashboard",

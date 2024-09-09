@@ -17,6 +17,7 @@ export const useUserStore = create((set) => ({
       });
   },
   setRole: async (role) => {
+    console.log(role)
     let res = await apiCaller("put", `/user/role`, { role: role });
     if (res.status === "success") {
       set({ user: res.user });
