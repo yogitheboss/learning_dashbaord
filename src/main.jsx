@@ -13,23 +13,11 @@ import Instructor from "./pages/instructor.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
-  },
-  {
-    path: "/auth",
     element: <Auth />,
   },
   {
-    path: "/dashboard",
+    path: "/dashboard/*",
     element: <Dashboard />,
-  },
-  {
-    path: "/student/:id",
-    element: <Student />,
-  },
-  {
-    path: "/instructor/:id",
-    element: <Instructor />,
   },
 ]);
 const clientId = import.meta.env.VITE_CLIENT_ID;

@@ -59,7 +59,7 @@ const InteractionFlow = () => {
     (params) => setEdges((els) => addEdge(params, els)),
     [],
   );
-
+  
   const [isSelectable, setIsSelectable] = useState(false);
   const [isDraggable, setIsDraggable] = useState(false);
   const [isConnectable, setIsConnectable] = useState(false);
@@ -73,6 +73,7 @@ const InteractionFlow = () => {
   const [captureElementClick, setCaptureElementClick] = useState(false);
 
   return (
+    
     <ReactFlow
       nodes={nodes}
       edges={edges}

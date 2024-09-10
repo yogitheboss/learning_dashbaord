@@ -24,7 +24,7 @@ const Navbar = ({type}) => {
   }
   return (
     <div>
-      <div className="flex relative items-center justify-between border border-b p-4">
+      <div className="flex relative items-center justify-between border border-b p-4 sticky">
         <span className="flex gap-2 text-4xl font-extrabold">
           <img
             src={roadmap}

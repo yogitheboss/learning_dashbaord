@@ -3,18 +3,16 @@ import { BsGoogle } from "react-icons/bs";
 import RoadMap from "@/assets/roadmap.jpeg";
 import Typewriter from "typewriter-effect";
 import { useAuth0 } from "@auth0/auth0-react";
-import pattern from "@/assets/pattern.svg"
+import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 export const Auth = () => {
-  const {
-    getAccessTokenSilently,
-    loginWithRedirect,
-    logout,
-    user,
-    isAuthenticated,
-  } = useAuth0();
-
-
-
+  const { loginWithRedirect, isAuthenticated } = useAuth0();
+  const navigate = useNavigate();
+  useEffect(() => {
+    if (isAuthenticated) {
+      navigate("/dashboard");
+    }
+  }, [isAuthenticated]);
   return (
     <div className="light h-screen w-full lg:flex bg-gradient-to-r from-blue-50 to-sky-100">
       <div className="hidden w-2/3 flex-col justify-between bg-[url('/src/assets/pattern.svg')] bg-cover bg-right-top p-8 lg:flex">
@@ -31,7 +29,7 @@ export const Auth = () => {
           <span className="flex">
             <Typewriter
               options={{
-                strings: ["Grow","Learn"],
+                strings: ["Grow", "Learn"],
                 autoStart: true,
                 loop: true,
               }}
@@ -50,8 +48,6 @@ export const Auth = () => {
           <span>
             <BsGoogle />
           </span>
-          
-          {isAuthenticated && <code>{JSON.stringify(user, null, 2)}</code>}
           <span>Sign in with Google</span>
         </Button>
       </div>

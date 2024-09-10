@@ -7,6 +7,7 @@ import { Route, Routes, useNavigate } from "react-router-dom";
 import Loading from "@/components/loading";
 import Student from "./student";
 import Instructor from "./instructor";
+import ProtectedRoute from "@/components/protectedRoute.jsx";
 
 const Dashboard = () => {
   const [loading, setLoading] = React.useState(true);
@@ -30,13 +31,12 @@ const Dashboard = () => {
       fetchToken();
     }
   }, [user]);
-  console.log(currentUser);
   useEffect(() => {
     if (currentUser) {
       if (currentUser.role === "student") {
-        navigate(`/student/${currentUser._id}`);
-      } else if(currentUser.role === "instructor") {
-        navigate(`/instructor/${currentUser._id}`);
+        navigate(`/dashboard/student/${currentUser._id}`);
+      } else if (currentUser.role === "instructor") {
+        navigate(`/dashboard/instructor/${currentUser._id}/courses`);
       }
     }
   }, [currentUser]);
@@ -49,15 +49,20 @@ const Dashboard = () => {
   }
 
   let currentRole = currentUser?.role;
-  return (
-    (currentRole === ""||!currentRole) && (
-      <div className="relative h-screen w-full items-center justify-center flex bg-gradient-to-r from-emerald-100 to-cyan-200">
-        <div className="w-full top-0 fixed z-50 ">
-          <Progress value={progress} max={100} />
-        </div>
-        <UserRoleForm setProgress={setProgress} userId={currentUser?._id}/>
+  return currentRole === "" || !currentRole ? (
+    <div className="relative h-screen w-full items-center justify-center flex bg-gradient-to-r from-emerald-100 to-cyan-200">
+      <div className="w-full top-0 fixed z-50 ">
+        <Progress value={progress} max={100} />
       </div>
-    )
+      <UserRoleForm setProgress={setProgress} userId={currentUser?._id} />
+    </div>
+  ) : (
+    <Routes>
+      <Route path="/" element={<ProtectedRoute />}>
+        <Route path="/student/:id" element={<Student />} />
+        <Route path="/instructor/:id/*" element={<Instructor />} />
+      </Route>
+    </Routes>
   );
 };
 
