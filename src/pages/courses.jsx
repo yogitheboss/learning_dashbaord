@@ -17,7 +17,6 @@ const Courses = () => {
   useEffect(() => {
     useCoursesStore.getState().fetchUserCourses(user?._id);
   }, []);
-  console.log(userCourses && userCourses.map((item) => item));
   return (
     <div
       className={cn(

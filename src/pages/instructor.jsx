@@ -11,7 +11,7 @@ const Instructor = () => {
       <Navbar type="instructor" />
       <Routes>
         <Route path="/upload" element={<CsvUploadForm />} />
-        <Route path="/course/:id" element={<CourseInfoIns />} />
+        <Route path="/course/:courseId" element={<CourseInfoIns />} />
         <Route path="/courses" element={<Courses />} />
       </Routes>
     </div>

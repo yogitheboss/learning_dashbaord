@@ -31,7 +31,6 @@ const Dashboard = () => {
       fetchToken();
     }
   }, [user]);
-  console.log(currentUser);
   useEffect(() => {
     if (currentUser && currentUser._id) {
       if (currentUser.role === "student") {

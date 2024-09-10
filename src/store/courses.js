@@ -4,6 +4,7 @@ export const useCoursesStore = create((set) => ({
   courses: null,
   enrolledCourses: null,
   userCourses: null,
+  currentCourse: null,
   setCourses: (courses) =>
     set({
       courses,
@@ -39,6 +40,15 @@ export const useCoursesStore = create((set) => ({
         console.log(err);
       });
   },
+  fetchCourse: (courseId) => {
+    apiCaller("GET", `/courses/${courseId}`)
+      .then((res) => {
+        set({ currentCourse: res.course });
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  },
   storeCourse: (course) => {
     apiCaller("POST", "/courses", course)
       .then((res) => {
@@ -54,10 +64,8 @@ export const useCoursesStore = create((set) => ({
       });
   },
   enrollCourse(courseId, userId) {
-    console.log("called");
     apiCaller("POST", `/courses/enroll/${courseId}`, { userId })
       .then((res) => {
-        console.log("again I am here", res);
         set((state) => {
           if (!state.enrolledCourses)
             return {
@@ -100,7 +108,7 @@ export const useCoursesStore = create((set) => ({
         console.log(err);
       });
   },
-  removeCourse(courseId){},
+  removeCourse(courseId) {},
   removeCourse: (courseId) =>
     set((state) => ({
       courses: state.courses.filter((course) => course._id !== courseId),

@@ -80,7 +80,6 @@ const CsvUploadForm = () => {
 
     return result;
   };
-  console.log(JSON.stringify(parsedData, null, 2));
   const handleSubmit = async (event) => {
     event.preventDefault();
     if (name && description && duration && csvFile) {

@@ -10,7 +10,6 @@ export const useUserStore = create((set) => ({
   fetchUser: (email) => {
     apiCaller("GET", `/user/${email}`)
       .then((res) => {
-        console.log(res);
         set({ user: res });
       })
       .catch((err) => {

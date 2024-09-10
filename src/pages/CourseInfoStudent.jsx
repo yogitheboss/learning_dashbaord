@@ -1,9 +1,19 @@
 import { useTheme } from '@/components/theme';
 import { cn } from '@/lib/utils';
+import { useCoursesStore } from '@/store/courses';
 import React from 'react'
+import { useParams } from 'react-router-dom';
 
 const CourseInfoStudent = () => {
   const { theme } = useTheme();
+  const { courseId } = useParams();
+  const { currentCourse } = useCoursesStore();
+  console.log(currentCourse);
+  useEffect(() => {
+    if (courseId) {
+      useCoursesStore.getState().fetchCourse(courseId);
+    }
+  }, [courseId]);
   return (
     <div
     className={cn(

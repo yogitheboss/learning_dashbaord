@@ -29,9 +29,7 @@ const AllCourses = () => {
   const enrolledCourses = courses?.filter((course) =>
     course.enrolledStudents.map((student) => student._id).includes(user?._id)
   );
-  console.log(enrolledCourses,courses);
   const courseTitles = courses?.map((course) => course.title);
-  console.log(courses);
   return (
     <div
       className={cn(
