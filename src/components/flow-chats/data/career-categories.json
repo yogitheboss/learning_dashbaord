@@ -1,63 +1,330 @@
 {
-    "1. Technology and Computer Science": {
-      "Software Developer": "Design, develop, and maintain software applications.",
-      "Web Developer": "Build and maintain websites and web applications.",
-      "Cybersecurity Specialist": "Protect systems and networks from digital attacks.",
-      "Data Analyst": "Analyze data to help organizations make informed decisions.",
-      "Game Designer/Developer": "Create and develop video games.",
-      "IT Support Specialist": "Provide technical support and troubleshoot IT issues."
+  "1. Technology and Computer Science": {
+    "Software Engineer": {
+      "description": "Develop, test, and maintain software applications across various platforms.",
+      "skills": [
+        "Programming languages (e.g., Python, Java, C++)",
+        "Problem-solving",
+        "Software development life cycle",
+        "Version control systems"
+      ],
+      "responsibilities": [
+        "Write and maintain code",
+        "Debug and test software",
+        "Collaborate with other developers",
+        "Manage software releases"
+      ],
+      "link": "https://www.indeed.com/q-Software-Engineer-jobs.html"
     },
-    "2. Science and Engineering": {
-      "Biomedical Engineer": "Design and develop medical devices and equipment.",
-      "Environmental Scientist": "Study and protect the environment.",
-      "Civil Engineer": "Plan and oversee construction of infrastructure projects.",
-      "Mechanical Engineer": "Design and build mechanical systems and devices.",
-      "Astronomer": "Study celestial objects and phenomena."
+    "Web Developer": {
+      "description": "Design and implement web applications and user interfaces using various technologies.",
+      "skills": [
+        "HTML, CSS, JavaScript",
+        "Responsive design",
+        "Front-end frameworks (e.g., React, Angular)",
+        "Backend development"
+      ],
+      "responsibilities": [
+        "Develop and maintain websites",
+        "Optimize website performance",
+        "Ensure cross-browser compatibility",
+        "Implement user interfaces"
+      ],
+      "link": "https://www.indeed.com/q-Web-Developer-jobs.html"
     },
-    "3. Business and Management": {
-      "Entrepreneur": "Start and manage your own business.",
-      "Marketing Specialist": "Develop strategies to promote products and services.",
-      "Financial Analyst": "Analyze financial data and provide investment advice.",
-      "Human Resources Specialist": "Manage recruitment, employee relations, and benefits.",
-      "Sales Manager": "Oversee sales teams and strategies."
+    "Cybersecurity Analyst": {
+      "description": "Monitor, detect, and respond to security threats and vulnerabilities.",
+      "skills": [
+        "Network security",
+        "Threat analysis",
+        "Security protocols",
+        "Incident response"
+      ],
+      "responsibilities": [
+        "Monitor security systems",
+        "Perform vulnerability assessments",
+        "Respond to security breaches",
+        "Update security policies"
+      ],
+      "link": "https://www.indeed.com/q-Cybersecurity-Analyst-jobs.html"
     },
-    "4. Creative Arts and Design": {
-      "Graphic Designer": "Create visual content for print and digital media.",
-      "Photographer/Videographer": "Capture and edit photos and videos.",
-      "Fashion Designer": "Design clothing and accessories.",
-      "Animator": "Create animations for movies, games, or online content.",
-      "Interior Designer": "Design and arrange indoor spaces."
+    "Data Scientist": {
+      "description": "Analyze complex data to provide insights and support decision-making processes.",
+      "skills": [
+        "Data analysis",
+        "Statistical modeling",
+        "Machine learning",
+        "Data visualization"
+      ],
+      "responsibilities": [
+        "Analyze and interpret complex data",
+        "Build predictive models",
+        "Create data visualizations",
+        "Collaborate with stakeholders"
+      ],
+      "link": "https://www.indeed.com/q-Data-Scientist-jobs.html"
     },
-    "5. Healthcare and Medicine": {
-      "Nurse": "Provide patient care and support in various healthcare settings.",
-      "Doctor": "Diagnose and treat medical conditions.",
-      "Pharmacist": "Dispense medications and provide pharmaceutical advice.",
-      "Physical Therapist": "Help patients recover and improve movement.",
-      "Medical Researcher": "Conduct research to advance medical knowledge and treatments."
+    "Game Developer": {
+      "description": "Create engaging and interactive games for various platforms, including mobile and console.",
+      "skills": [
+        "Game design principles",
+        "Programming languages (e.g., C#, Unity)",
+        "Graphics programming",
+        "Problem-solving"
+      ],
+      "responsibilities": [
+        "Design game mechanics",
+        "Develop game code",
+        "Test and debug games",
+        "Collaborate with artists and designers"
+      ],
+      "link": "https://www.indeed.com/q-Game-Developer-jobs.html"
     },
-    "6. Education and Social Services": {
-      "Teacher": "Educate and support students in academic settings.",
-      "Counselor": "Provide guidance and support for personal, academic, and career issues.",
-      "Social Worker": "Assist individuals and families in overcoming social and economic challenges.",
-      "Early Childhood Educator": "Work with young children to promote their development."
+    "IT Support Technician": {
+      "description": "Resolve technical issues and support users with IT-related problems.",
+      "skills": [
+        "Technical troubleshooting",
+        "Customer service",
+        "Knowledge of operating systems",
+        "Networking basics"
+      ],
+      "responsibilities": [
+        "Provide technical support",
+        "Troubleshoot hardware and software issues",
+        "Install and configure systems",
+        "Maintain documentation"
+      ],
+      "link": "https://www.indeed.com/q-IT-Support-Technician-jobs.html"
+    }
+  },
+  "2. Science and Engineering": {
+    "Biomedical Technician": {
+      "description": "Maintain and repair medical equipment used in healthcare settings.",
+      "skills": [
+        "Medical equipment knowledge",
+        "Technical troubleshooting",
+        "Electronics",
+        "Attention to detail"
+      ],
+      "responsibilities": [
+        "Repair and maintain medical devices",
+        "Calibrate equipment",
+        "Ensure compliance with regulations",
+        "Provide technical support"
+      ],
+      "link": "https://www.indeed.com/q-Biomedical-Technician-jobs.html"
     },
-    "7. Trades and Technical Careers": {
-      "Electrician": "Install and maintain electrical systems.",
-      "Plumber": "Install and repair plumbing systems.",
-      "Carpenter": "Build and repair wooden structures.",
-      "Automotive Technician": "Repair and maintain vehicles.",
-      "HVAC Technician": "Install and service heating, ventilation, and air conditioning systems."
+    "Environmental Consultant": {
+      "description": "Assess environmental impacts and advise on sustainability practices.",
+      "skills": [
+        "Environmental regulations",
+        "Impact assessment",
+        "Sustainability practices",
+        "Data analysis"
+      ],
+      "responsibilities": [
+        "Conduct environmental assessments",
+        "Advise on compliance",
+        "Develop sustainability strategies",
+        "Prepare reports"
+      ],
+      "link": "https://www.indeed.com/q-Environmental-Consultant-jobs.html"
     },
-    "8. Public Safety and Law": {
-      "Police Officer": "Protect and serve communities, enforce laws.",
-      "Firefighter": "Respond to fires, rescue operations, and emergencies.",
-      "Paralegal": "Assist lawyers with legal research and case preparation.",
-      "Forensic Scientist": "Analyze evidence from crime scenes."
+    "Structural Engineer": {
+      "description": "Design and analyze structures such as bridges, buildings, and dams.",
+      "skills": [
+        "Structural design",
+        "Engineering software (e.g., AutoCAD, Revit)",
+        "Material science",
+        "Problem-solving"
+      ],
+      "responsibilities": [
+        "Design and analyze structures",
+        "Ensure safety and stability",
+        "Collaborate with architects",
+        "Prepare engineering reports"
+      ],
+      "link": "https://www.indeed.com/q-Structural-Engineer-jobs.html"
     },
-    "Exploring Interests": {
-      "Internships": "Gain practical experience in fields of interest.",
-      "Volunteering": "Explore different careers and give back to the community.",
-      "Extracurricular Activities": "Participate in clubs or activities related to career interests."
+    "Mechanical Design Engineer": {
+      "description": "Create detailed designs for mechanical systems and machinery.",
+      "skills": [
+        "Mechanical design",
+        "CAD software",
+        "Material selection",
+        "Prototype development"
+      ],
+      "responsibilities": [
+        "Design mechanical systems",
+        "Create technical drawings",
+        "Develop prototypes",
+        "Test and validate designs"
+      ],
+      "link": "https://www.indeed.com/q-Mechanical-Design-Engineer-jobs.html"
+    },
+    "Astrophysicist": {
+      "description": "Study the physical properties of celestial bodies and phenomena.",
+      "skills": [
+        "Astronomy",
+        "Mathematical modeling",
+        "Data analysis",
+        "Research methodologies"
+      ],
+      "responsibilities": [
+        "Conduct astronomical research",
+        "Analyze celestial data",
+        "Publish findings",
+        "Collaborate with other scientists"
+      ],
+      "link": "https://www.indeed.com/q-Astrophysicist-jobs.html"
+    }
+  },
+  "3. Business and Management": {
+    "Startup Founder": {
+      "description": "Establish and grow new business ventures, from concept to execution.",
+      "skills": [
+        "Entrepreneurship",
+        "Business strategy",
+        "Fundraising",
+        "Leadership"
+      ],
+      "responsibilities": [
+        "Develop business plans",
+        "Secure funding",
+        "Manage operations",
+        "Lead a team"
+      ],
+      "link": "https://www.indeed.com/q-Startup-Founder-jobs.html"
+    },
+    "Digital Marketing Manager": {
+      "description": "Create and manage online marketing strategies to drive traffic and sales.",
+      "skills": [
+        "SEO/SEM",
+        "Content marketing",
+        "Social media management",
+        "Data analytics"
+      ],
+      "responsibilities": [
+        "Develop digital marketing campaigns",
+        "Analyze campaign performance",
+        "Manage social media channels",
+        "Optimize web content"
+      ],
+      "link": "https://www.indeed.com/q-Digital-Marketing-Manager-jobs.html"
+    },
+    "Investment Banker": {
+      "description": "Provide financial services related to mergers, acquisitions, and capital raising.",
+      "skills": [
+        "Financial modeling",
+        "Market analysis",
+        "Mergers and acquisitions",
+        "Client relations"
+      ],
+      "responsibilities": [
+        "Advise on investment opportunities",
+        "Prepare financial reports",
+        "Negotiate deals",
+        "Manage client portfolios"
+      ],
+      "link": "https://www.indeed.com/q-Investment-Banker-jobs.html"
+    },
+    "HR Manager": {
+      "description": "Oversee recruitment, employee relations, and organizational development.",
+      "skills": [
+        "Human resources management",
+        "Employee relations",
+        "Recruitment",
+        "Training and development"
+      ],
+      "responsibilities": [
+        "Manage HR functions",
+        "Develop HR policies",
+        "Recruit and onboard employees",
+        "Resolve employee issues"
+      ],
+      "link": "https://www.indeed.com/q-HR-Manager-jobs.html"
+    },
+    "Business Development Director": {
+      "description": "Identify growth opportunities and develop strategies to expand business operations.",
+      "skills": [
+        "Business development",
+        "Strategic planning",
+        "Market research",
+        "Negotiation"
+      ],
+      "responsibilities": [
+        "Identify new business opportunities",
+        "Develop growth strategies",
+        "Build and maintain client relationships",
+        "Lead business development initiatives"
+      ],
+      "link": "https://www.indeed.com/q-Business-Development-Director-jobs.html"
+    }
+  },
+  "4. Creative Arts and Design": {
+    "Visual Designer": {
+      "description": "Design visually compelling graphics and layouts for various media.",
+      "skills": [
+        "Graphic design",
+        "Adobe Creative Suite",
+        "UX/UI design",
+        "Creativity"
+      ],
+      "responsibilities": [
+        "Create visual designs",
+        "Develop design concepts",
+        "Collaborate with clients",
+        "Ensure brand consistency"
+      ],
+      "link": "https://www.indeed.com/q-Visual-Designer-jobs.html"
+    },
+    "Multimedia Artist": {
+      "description": "Create and edit multimedia content, including video and animations.",
+      "skills": [
+        "Multimedia production",
+        "Video editing",
+        "Animation",
+        "Storyboarding"
+      ],
+      "responsibilities": [
+        "Produce multimedia content",
+        "Edit videos and animations",
+        "Develop visual effects",
+        "Work with creative teams"
+      ],
+      "link": "https://www.indeed.com/q-Multimedia-Artist-jobs.html"
+    },
+    "Fashion Stylist": {
+      "description": "Curate and design clothing and accessories to reflect current trends.",
+      "skills": [
+        "Fashion design",
+        "Trend analysis",
+        "Styling",
+        "Client consultation"
+      ],
+      "responsibilities": [
+        "Design clothing and accessories",
+        "Consult with clients",
+        "Stay updated on fashion trends",
+        "Organize fashion shoots"
+      ],
+      "link": "https://www.indeed.com/q-Fashion-Stylist-jobs.html"
+    },
+    "3D Animator": {
+      "description": "Develop three-dimensional animations for films, games, or simulations.",
+      "skills": [
+        "3D animation",
+        "Animation software (e.g., Blender, Maya)",
+        "Character modeling",
+        "Visual effects"
+      ],
+      "responsibilities": [
+        "Create 3D models",
+        "Develop animations",
+        "Collaborate with animation teams",
+        "Test animations"
+      ],
+      "link": "https://www.indeed.com/q-3D-Animator-jobs.html"
     }
   }
-  
+}
