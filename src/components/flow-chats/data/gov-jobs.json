@@ -1,0 +1,110 @@
+{
+    "1. Central Government Jobs (India)": {
+      "A. Staff Selection Commission (SSC) Jobs": {
+        "SSC Combined Higher Secondary Level (CHSL) Exam": {
+          "Roles": ["Data Entry Operator (DEO)", "Lower Division Clerk (LDC)", "Postal Assistant (PA)", "Sorting Assistant (SA)"],
+          "Eligibility": "12th pass (Higher Secondary)"
+        },
+        "SSC Multi-Tasking Staff (MTS) Exam": {
+          "Roles": ["General support and office maintenance roles in various ministries and departments"],
+          "Eligibility": "10th pass (Matriculation)"
+        }
+      },
+      "B. Indian Railways": {
+        "Railway Recruitment Board (RRB) Exams": {
+          "Roles": ["Junior Clerk", "Ticket Collector (TC)", "Train Clerk", "Commercial Clerk", "Trackman"],
+          "Eligibility": "10th/12th pass, depending on the role"
+        }
+      },
+      "C. Indian Army, Navy, and Air Force": {
+        "Indian Army": {
+          "Roles": ["Soldier", "Clerk", "Technical Staff"],
+          "Eligibility": "10th/12th pass"
+        },
+        "Indian Navy": {
+          "Roles": ["Sailor (Artificer Apprentice, SSR, MR)"],
+          "Eligibility": "12th pass in Science stream (with Physics and Math)"
+        },
+        "Indian Air Force": {
+          "Roles": ["Airmen in Group X (Technical)", "Group Y (Non-Technical)"],
+          "Eligibility": "12th pass (Science for Group X, any stream for Group Y)"
+        }
+      },
+      "D. Defense and Paramilitary Forces": {
+        "Border Security Force (BSF), Central Reserve Police Force (CRPF), Central Industrial Security Force (CISF)": {
+          "Roles": ["Constable", "Head Constable"],
+          "Eligibility": "10th/12th pass, physical fitness"
+        },
+        "National Defence Academy (NDA) & Naval Academy Exam": {
+          "Roles": ["Officer in the Indian Army, Navy, or Air Force"],
+          "Eligibility": "12th pass (Science stream for Navy/Air Force)",
+          "Exam": "Conducted by UPSC (Union Public Service Commission)"
+        }
+      }
+    },
+    "2. State Government Jobs": {
+      "A. State Public Service Commissions (PSC)": {
+        "Roles": ["Clerk", "Junior Assistant", "Police Constable", "Revenue Officer"],
+        "Eligibility": "12th pass"
+      },
+      "B. Police and Law Enforcement": {
+        "State Police Jobs": {
+          "Roles": ["Constable", "Sub-Inspector (SI) (after graduation)"],
+          "Eligibility": "10th/12th pass for Constable"
+        }
+      },
+      "C. Forest Department": {
+        "Roles": ["Forest Guard", "Forest Ranger"],
+        "Eligibility": "10th/12th pass depending on the state requirements"
+      },
+      "D. Public Works Department (PWD)": {
+        "Roles": ["Junior Engineer (after diploma)", "Technician", "Clerk"],
+        "Eligibility": "12th pass or technical diploma"
+      }
+    },
+    "3. Public Sector Banks and Financial Institutions": {
+      "A. Banking Jobs": {
+        "Institute of Banking Personnel Selection (IBPS) Clerical Exam": {
+          "Roles": ["Clerk", "Office Assistant in Public Sector Banks"],
+          "Eligibility": "12th pass"
+        }
+      },
+      "B. Postal Department": {
+        "Gramin Dak Sevak (GDS)": {
+          "Roles": ["Postal Assistant", "Postman", "Sorting Assistant"],
+          "Eligibility": "10th pass"
+        }
+      }
+    },
+    "4. Government Healthcare Jobs": {
+      "A. Auxiliary Nurse Midwife (ANM)": {
+        "Roles": ["Basic healthcare provider in rural areas"],
+        "Eligibility": "12th pass with ANM certification"
+      },
+      "B. Pharmacist in Government Hospitals": {
+        "Roles": ["Dispensing medicines in government healthcare facilities"],
+        "Eligibility": "12th pass in Science stream with a diploma in Pharmacy"
+      }
+    },
+    "5. Teaching and Education": {
+      "A. Primary Teacher (PRT)": {
+        "Roles": ["Teacher in government primary schools"],
+        "Eligibility": "12th pass with a Diploma in Elementary Education (D.El.Ed) or B.Ed after graduation"
+      },
+      "B. Special Educator": {
+        "Roles": ["Educator for children with special needs in government schools"],
+        "Eligibility": "12th pass with a diploma or certificate in special education"
+      }
+    },
+    "6. Government Scholarships and Training Programs": {
+      "A. Apprenticeships in Public Sector Enterprises": {
+        "Roles": ["Technician Apprentice", "Trade Apprentice"],
+        "Eligibility": "10th/12th pass with technical diplomas or trade certifications"
+      },
+      "B. National Cadet Corps (NCC)": {
+        "Roles": ["Offers opportunities for scholarships and entry into defense services"],
+        "Eligibility": "12th pass"
+      }
+    }
+  }
+  

@@ -1,0 +1,197 @@
+{
+    "1. Basics of Web Development": {
+      "Internet Basics": [
+        "How the internet works",
+        "What is HTTP/HTTPS",
+        "DNS and Domain Names"
+      ],
+      "Web Hosting & Domain Names": [
+        "Understanding servers",
+        "Hosting services",
+        "How to deploy a website"
+      ],
+      "Version Control (Git & GitHub)": [
+        "Learning Git",
+        "Pushing code to GitHub",
+        "Collaborating with others"
+      ]
+    },
+    "2. Frontend Development": {
+      "A. HTML & CSS": {
+        "HTML": [
+          "Basic structure",
+          "Tags",
+          "Forms",
+          "Tables",
+          "Media tags"
+        ],
+        "CSS": [
+          "Styling",
+          "Layouts (Box Model, Flexbox, Grid)",
+          "Responsiveness (Media Queries)"
+        ]
+      },
+      "B. JavaScript (JS)": {
+        "JavaScript Fundamentals": [
+          "Variables",
+          "Loops",
+          "Conditionals",
+          "Functions",
+          "Events",
+          "DOM manipulation"
+        ],
+        "Modern JavaScript (ES6+)": [
+          "Arrow functions",
+          "Promises",
+          "Async/await",
+          "Destructuring",
+          "Template literals"
+        ]
+      },
+      "C. Responsive Web Design": {
+        "Mobile-first design": "Ensure your website works on all devices (phones, tablets, desktops)",
+        "CSS Frameworks": [
+          "Bootstrap",
+          "Tailwind CSS"
+        ]
+      },
+      "D. Version Control (Git)": {
+        "Git Workflow": [
+          "Branching",
+          "Merging",
+          "Pull requests",
+          "Contributing to open-source projects"
+        ]
+      }
+    },
+    "3. Advanced Frontend Development": {
+      "A. JavaScript Frameworks": {
+        "React.js": [
+          "Component-based architecture",
+          "JSX",
+          "Managing state"
+        ],
+        "Other Options": [
+          "Vue.js",
+          "Angular"
+        ]
+      },
+      "B. TypeScript": "Adding static types to your JavaScript code to make it more scalable and maintainable",
+      "C. State Management": {
+        "React": [
+          "Redux",
+          "Context API"
+        ],
+        "Vue.js": "Vuex",
+        "Angular": "NgRx"
+      },
+      "D. Frontend Tools": {
+        "Task Runners": [
+          "Webpack",
+          "Vite",
+          "Parcel"
+        ],
+        "Package Managers": [
+          "npm",
+          "yarn"
+        ]
+      },
+      "E. Testing": {
+        "Unit Testing": [
+          "Jest",
+          "React Testing Library"
+        ],
+        "End-to-End Testing": [
+          "Cypress",
+          "Selenium"
+        ]
+      }
+    },
+    "4. Backend Development": {
+      "A. Basics of Backend": {
+        "Servers": [
+          "Apache",
+          "Nginx"
+        ],
+        "APIs": [
+          "RESTful APIs",
+          "HTTP methods (GET, POST, PUT, DELETE)"
+        ]
+      },
+      "B. Backend Languages": [
+        "Node.js (JavaScript)",
+        "Python (Django/Flask)",
+        "PHP",
+        "Ruby (Ruby on Rails)",
+        "Java (Spring)"
+      ],
+      "C. Databases": {
+        "SQL Databases": [
+          "MySQL",
+          "PostgreSQL"
+        ],
+        "NoSQL Databases": [
+          "MongoDB"
+        ],
+        "Learn ORMs": [
+          "Sequelize (Node.js)",
+          "Prisma",
+          "Mongoose (MongoDB)"
+        ]
+      },
+      "D. Authentication & Security": {
+        "User Authentication": [
+          "OAuth",
+          "JWT",
+          "Sessions"
+        ],
+        "Security Practices": [
+          "HTTPS",
+          "CORS",
+          "Content Security Policy",
+          "Preventing XSS and SQL injection"
+        ]
+      },
+      "E. Building APIs": {
+        "REST APIs": "Build, document, and version your API",
+        "GraphQL": "An alternative to REST for more flexible queries"
+      }
+    },
+    "5. DevOps & Deployment": {
+      "A. CI/CD": "Automate deployment using Jenkins, GitHub Actions, or Travis CI",
+      "B. Cloud Platforms": {
+        "Cloud Providers": [
+          "AWS",
+          "Azure",
+          "Google Cloud"
+        ],
+        "Serverless Architecture": [
+          "AWS Lambda",
+          "Azure Functions",
+          "Netlify Functions"
+        ]
+      },
+      "C. Docker & Containers": "Docker for containerizing applications to ensure consistency across environments",
+      "D. Web Security Knowledge": [
+        "SSL certificates",
+        "HTTPS",
+        "Data encryption",
+        "Common vulnerabilities (OWASP Top 10)"
+      ],
+      "E. Monitoring & Performance": [
+        "New Relic",
+        "Prometheus"
+      ]
+    },
+    "6. Optional (But Valuable) Skills": {
+      "Progressive Web Apps (PWAs)": "Offline-first approach, service workers",
+      "WebAssembly": "For high-performance apps",
+      "GraphQL": "For apps requiring complex querying",
+      "Mobile Development": [
+        "React Native",
+        "Flutter"
+      ],
+      "JAMstack": "Modern frontends with headless CMS (Contentful, Strapi)"
+    }
+  }
+  
