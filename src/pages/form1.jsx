@@ -14,8 +14,8 @@ const UserRoleForm = ({ setProgress, userId }) => {
     if (role) {
       await useUserStore.getState().setRole(role);
       setProgress(100);
-      if (role === "Instructor") navigate(`/instructor/${userId}`);
-      else if (role === "Student") navigate(`/student/${userId}`);
+      if (role === "Instructor") navigate(`/dashboard/instructor/${userId}`);
+      else if (role === "Student") navigate(`/dashboard/student/${userId}`);
     } else {
       alert("Please select your role.");
     }

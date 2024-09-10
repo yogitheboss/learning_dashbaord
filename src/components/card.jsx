@@ -6,6 +6,7 @@ import { BsFillTrash2Fill } from "react-icons/bs";
 import { FaUserGraduate } from "react-icons/fa";
 import { MdDateRange } from "react-icons/md";
 import { AiOutlineFileText } from "react-icons/ai";
+import { useNavigate } from "react-router-dom";
 
 export const Card = ({
   id,
@@ -19,7 +20,7 @@ export const Card = ({
   deleteAllowed,
 }) => {
   const { user } = useUserStore();
-
+  const navigate = useNavigate();
   return (
     <div className="max-w-md rounded-xl overflow-hidden shadow-lg bg-gradient-to-b from-blue-50 to-blue-100 p-6 m-4 transform transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl cursor-pointer">
       <div className="mb-3 text-center">
@@ -57,6 +58,17 @@ export const Card = ({
             Enroll
           </Button>
         )}
+        <Button
+          className="bg-blue-600 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded-lg mx-2"
+          onClick={() => {
+            // use current route and append course id
+            if (user.role === "instructor")
+              navigate(`/dashboard/instructor/${user._id}/course/${id}`);
+            else navigate(`/dashboard/student/${user._id}/course/${id}`);
+          }}
+        >
+          View Course
+        </Button>
         {deleteAllowed && (
           <Button
             className="bg-red-600 hover:bg-red-800 text-white font-bold py-2 px-4 rounded-lg mx-2"

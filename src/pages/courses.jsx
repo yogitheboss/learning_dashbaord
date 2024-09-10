@@ -7,6 +7,8 @@ import { CardList } from "@/components/cardlist";
 import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { FaFileUpload } from "react-icons/fa";
+import { Component } from "@/components/chart";
+import { CourseContainer } from "@/components/studentsInfForIns";
 const Courses = () => {
   const { userCourses } = useCoursesStore();
   const { user } = useUserStore();
@@ -19,26 +21,29 @@ const Courses = () => {
   return (
     <div
       className={cn(
-        " h-screen w-full text-center text-black",
+        " h-screen w-full text-center text-black overflow-y-auto pb-80",
         theme === "light" ? "bg-blue-100" : "bg-blue-900"
       )}
     >
-      <div className="flex items-center justify-between mt-10 p-8">
-        {/* Container with flex and gap */}
-        <h1 className="text-4xl font-bold text-blue-50">
-          Courses made by Instructor
-        </h1>
-        <Button
-          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-          onClick={() => {
-            navigate(`/dashboard/instructor/${user._id}/upload`);
-          }}
-        >
-          <FaFileUpload /> <span>Go to Upload</span>
-        </Button>
+      <div>
+        <div className="flex items-center justify-between mt-10 p-8">
+          {/* Container with flex and gap */}
+          <h1 className="text-4xl font-bold text-blue-50">
+            Courses made by Instructor
+          </h1>
+          <Button
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            onClick={() => {
+              navigate(`/dashboard/instructor/${user._id}/upload`);
+            }}
+          >
+            <FaFileUpload /> <span>Go to Upload</span>
+          </Button>
+        </div>
+        <CardList items={userCourses} type={"instructor"} />
       </div>
-
-      <CardList items={userCourses} type={"instructor"} />
+      <Component/>
+      <CourseContainer/>
     </div>
   );
 };

@@ -3,6 +3,8 @@ import InteractionFlow from "@/components/reactFlow";
 import { useCoursesStore } from "@/store/courses";
 import React, { useEffect } from "react";
 import AllCourses from "./allCourses";
+import { Routes } from "react-router-dom";
+import CourseInfoStudent from "./CourseInfoStudent";
 
 const Student = () => {
   useEffect(() => {
@@ -13,6 +15,11 @@ const Student = () => {
     <div>
       <Navbar type={"Student"} />
       <AllCourses />
+      <Routes>
+        <Route path="/course/:id" element={<CourseInfoStudent />} />
+        <Route path="/" element={<AllCourses />} />
+      </Routes>
+
       {/* <div className="w-full h-[800px] text-gray-800">
         <InteractionFlow />
       </div> */}

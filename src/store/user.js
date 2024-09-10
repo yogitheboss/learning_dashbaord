@@ -1,5 +1,5 @@
 import apiCaller from "@/utils/apiCaller";
-import {create} from "zustand";
+import { create } from "zustand";
 export const useUserStore = create((set) => ({
   user: null,
   token: null,
@@ -10,6 +10,7 @@ export const useUserStore = create((set) => ({
   fetchUser: (email) => {
     apiCaller("GET", `/user/${email}`)
       .then((res) => {
+        console.log(res);
         set({ user: res });
       })
       .catch((err) => {

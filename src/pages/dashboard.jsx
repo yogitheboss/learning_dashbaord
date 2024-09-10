@@ -31,8 +31,9 @@ const Dashboard = () => {
       fetchToken();
     }
   }, [user]);
+  console.log(currentUser);
   useEffect(() => {
-    if (currentUser) {
+    if (currentUser && currentUser._id) {
       if (currentUser.role === "student") {
         navigate(`/dashboard/student/${currentUser._id}`);
       } else if (currentUser.role === "instructor") {
