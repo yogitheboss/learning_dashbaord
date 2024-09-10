@@ -1,7 +1,36 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { IoCloseOutline } from "react-icons/io5";
 
 function Sidebar({ nodeData, onClose }) {
+  const [geminiResponse, setGeminiResponse] = useState(""); // State for AI response
+  const [loading, setLoading] = useState(false); // State for loading indicator
+
+  useEffect(() => {
+    if (nodeData && nodeData.label) {
+      fetchGeminiResponse(nodeData.label); // Fetch AI response when sidebar opens
+    }
+  }, [nodeData]);
+
+  const fetchGeminiResponse = async (label) => {
+    console.log(label,"label")
+    setLoading(true); // Start loading
+    try {
+      const response = await fetch("http://localhost:5000/api/generate-content", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ prompt: label }), // Send label as the prompt
+      });
+      const result = await response.text(); // Get the AI-generated content
+      setGeminiResponse(result); // Set the response in state
+    } catch (err) {
+      setGeminiResponse("Error: " + err.message); // Handle error case
+    } finally {
+      setLoading(false); // End loading
+    }
+  };
+
   if (!nodeData) return null; // Do not render if no node data
 
   const resources = nodeData.resources;
@@ -29,6 +58,20 @@ function Sidebar({ nodeData, onClose }) {
             </a>
           </div>
         ))}
+      </div>
+
+      {/* Gemini AI response */}
+      <div className="mt-6">
+        {loading ? (
+          <p>Loading AI response...</p>
+        ) : geminiResponse ? (
+          <div className="p-4 bg-gray-100 rounded-lg">
+            <h3 className="text-lg font-semibold">Gemini Response:</h3>
+            <p className="text-sm">{geminiResponse}</p>
+          </div>
+        ) : (
+          <p>No AI response available.</p>
+        )}
       </div>
     </div>
   );
