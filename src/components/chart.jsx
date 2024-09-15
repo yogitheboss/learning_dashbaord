@@ -23,7 +23,7 @@ const chartConfig = {
 
 export function Component() {
   return (
-    <div className="max-w-sm mx-auto p-4 bg-white shadow-lg rounded-lg"> {/* Smaller width container */}
+    <div className="max-w-sm mx-auto p-4 bg-white shadow-lg rounded-lg mt-10"> {/* Smaller width container */}
       <h2 className="text-xl font-bold mb-4 text-center">Student Enrollments</h2> {/* Title for the chart */}
       <ChartContainer config={chartConfig} className="min-h-[200px] w-full">
         <BarChart accessibilityLayer data={enrollmentData}>
